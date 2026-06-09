@@ -345,7 +345,7 @@ class AdvancedAttentionFeatures:
 
 
 class ScoresLogger:
-    def __init__(self, log_dir='/home/tcs/4t01/lxk/openvla/log', filename=None):
+    def __init__(self, log_dir='/home/path/openvla/log', filename=None):
         os.makedirs(log_dir, exist_ok=True)
         
         if filename is None:
@@ -461,7 +461,7 @@ class ScoresLogger:
 
 
 class MetricsLogger:
-    def __init__(self, log_dir='/home/tcs/4t01/lxk/openvla/log', filename=None):
+    def __init__(self, log_dir='/home/path/openvla/log', filename=None):
         os.makedirs(log_dir, exist_ok=True)
         
         if filename is None:
@@ -512,13 +512,13 @@ def set_seed(seed=42):
 class FinetuneConfig:
     """Fine-tune the configuration class - all configurable parameters"""
     # vla_path: str = "openvla/openvla-7b"
-    vla_path: str = "/home/tcs/4t01/lxk/openvla/log/openvla-7b+libero_spatial_no_noops+b4+lr-0.0005+lora-r32+dropout-0.0"
+    vla_path: str = "/home/path/openvla/log/openvla-7b+libero_spatial_no_noops+b4+lr-0.0005+lora-r32+dropout-0.0"
 
     # path
-    data_root_dir: Path = Path("/home/tcs/4t01/lxk/datasets/modified_libero_rlds")
+    data_root_dir: Path = Path("/home/path/datasets/modified_libero_rlds")
     dataset_name: str = "libero_spatial_no_noops"
-    run_root_dir: Path = Path("/home/tcs/4t01/lxk/openvla/log")     # The directory path for storing logs and checkpoints
-    adapter_tmp_dir: Path = Path("/home/tcs/4t01/lxk/model/openvla")                   
+    run_root_dir: Path = Path("/home/path/openvla/log")     # The directory path for storing logs and checkpoints
+    adapter_tmp_dir: Path = Path("/home/path/model/openvla")                   
 
     # Tuning Parameter
     batch_size: int = 1
@@ -689,7 +689,7 @@ def extraction(cfg: FinetuneConfig) -> None:
 
     # Member! - Training set evaluation cycle
     vla.eval()  # Set to evaluation mode
-    save_path = '/home/tcs/4t01/lxk/openvla/log/member/attention_features.pt'
+    save_path = '/home/path/openvla/log/member/attention_features.pt'
     features_list = []
 
     with torch.no_grad():
@@ -743,7 +743,7 @@ def extraction(cfg: FinetuneConfig) -> None:
 
     # Non-member! - Training set evaluation cycle
     vla.eval()  # Set to evaluation mode
-    save_path = '/home/tcs/4t01/lxk/openvla/log/nonmember/attention_features.pt'
+    save_path = '/home/path/openvla/log/nonmember/attention_features.pt'
     features_list = []
 
     with torch.no_grad():
