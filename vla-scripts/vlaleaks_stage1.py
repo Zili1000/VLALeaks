@@ -357,7 +357,7 @@ class ScoresLogger:
     def log_scores(self, scores):
         """
         Record all the values in the scores dictionary and store them in wide format
-        scores: defaultdict(list) 格式，如 {'mink_0.4': [-0.002032], 'mink_0.5': [-0.001357], ...}
+        scores: defaultdict(list) ， {'mink_0.4': [-0.002032], 'mink_0.5': [-0.001357], ...}
         """
         metric_names = sorted(scores.keys())
 
