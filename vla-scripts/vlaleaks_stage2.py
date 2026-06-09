@@ -11,17 +11,17 @@ import seaborn as sns
 
 # 1. Load data
 
-features0 = torch.load('/home/tcs/4t01/lxk/openvla/log/member/libero_spatial_attention_features.pt')[:10000]
-features1 = torch.load('/home/tcs/4t01/lxk/openvla/log/nonmember/libero_spatial_attention_features.pt')[:10000]
+features0 = torch.load('/home/path/openvla/log/member/libero_spatial_attention_features.pt')[:10000]
+features1 = torch.load('/home/path/openvla/log/nonmember/libero_spatial_attention_features.pt')[:10000]
 
-# features0 = torch.load('/home/tcs/4t01/lxk/openvla/log/member/libero_object_attention_features.pt')[:10000]
-# features1 = torch.load('/home/tcs/4t01/lxk/openvla/log/nonmember/libero_object_attention_features.pt')[:10000]
+# features0 = torch.load('/home/path/openvla/log/member/libero_object_attention_features.pt')[:10000]
+# features1 = torch.load('/home/path/openvla/log/nonmember/libero_object_attention_features.pt')[:10000]
 
-# features0 = torch.load('/home/tcs/4t01/lxk/openvla/log/member/libero_goal_attention_features.pt')[:10000]
-# features1 = torch.load('/home/tcs/4t01/lxk/openvla/log/nonmember/libero_goal_attention_features.pt')[:10000]
+# features0 = torch.load('/home/path/openvla/log/member/libero_goal_attention_features.pt')[:10000]
+# features1 = torch.load('/home/path/openvla/log/nonmember/libero_goal_attention_features.pt')[:10000]
 
-# features0 = torch.load('/home/tcs/4t01/lxk/openvla/log/member/libero_10_attention_features.pt')[:10000]
-# features1 = torch.load('/home/tcs/4t01/lxk/openvla/log/nonmember/libero_10_attention_features.pt')[:10000]
+# features0 = torch.load('/home/path/openvla/log/member/libero_10_attention_features.pt')[:10000]
+# features1 = torch.load('/home/path/openvla/log/nonmember/libero_10_attention_features.pt')[:10000]
 
 
 # num = 500
