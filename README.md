@@ -2,7 +2,7 @@
 VLALeaks: Membership Inference Attacks against Vision-Language-Action Models
 
 <div align="center">
-<img src="overview.pdf" width="750" alt="Overview of VLALeaks.">
+<img src="overview.png" width="750" alt="Overview of VLALeaks.">
 </div>
 
 ## Overview
