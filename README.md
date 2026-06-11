@@ -6,10 +6,10 @@ VLALeaks: Membership Inference Attacks against Vision-Language-Action Models
 </div>
 
 ## Overview
-💡 VLALeaks is a membership inference attack toolkit targeting vision-language-action models.
+💡 VLALeaks is a membership inference attack targeting vision-language-action models.
 The attack pipeline is divided into two strictly sequential stages:
-1. **Stage 1**: Extract sensitive membership leakage features from the target VLA model
-2. **Stage 2**: Train and evaluate binary attack classifiers to distinguish member and non-member samples
+1. **Stage 1**: Extract sensitive membership leakage features from the target VLA model.
+2. **Stage 2**: Train and evaluate a binary attack model to distinguish member and non-member samples.
 
 ## Environment Setup
 ### Basic Hardware & Software Requirements
