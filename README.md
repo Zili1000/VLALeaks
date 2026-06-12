@@ -21,7 +21,7 @@ The attack pipeline is divided into two strictly sequential stages:
 
 🧠 This project is built on top of [OpenVLA](https://github.com/openvla/openvla), so please follow its installation instructions to configure the base environment first.
 
-🧪 Experiments are conducted in the [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) simulation environment. Make sure to install LIBERO and its dependencies as described in their official documentation.
+🧪 Experiments are conducted in the [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) simulation environment. Make sure to install LIBERO and its dependencies as described in their official documentation. Additional support can be provided by [LIBERO+](https://github.com/sylvestf/LIBERO-plus).
 
 ## Run Attack Pipeline
 ⚠️ Execution order cannot be reversed: Stage 1 must finish before launching Stage 2
